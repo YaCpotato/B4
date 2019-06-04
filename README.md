@@ -10,8 +10,9 @@ TBD
 1. Accuracy
 2. Recall
 3. Precision
-4. F-metrics
 5. ::confusion_matrix
 ![confusion_sample](https://github.com/YaCpotato/B4/blob/master/images/confusion_matrix.png)
 ## Result
 ![confusion_matrix](https://github.com/YaCpotato/B4/blob/master/images/cifar_confusion.png)
+
+評価値
