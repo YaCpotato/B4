@@ -16,3 +16,7 @@ TBD
 ![confusion_matrix](https://github.com/YaCpotato/B4/blob/master/images/cifar_confusion.png)
 
 評価値
+Accuracy
+Loss
+Recall
+Precision
