@@ -35,7 +35,10 @@ def R(y_true, y_pred):
 
 
 #データのロードと前処理
-(x_train, y_train), (x_test, y_test) = cifar10.load_data()
+
+    
+
+(x_train, y_train), (x_test, y_test) =cifar10.load_data()
 print(x_train.shape,y_train.shape,x_test.shape,y_test.shape)
 x_train = x_train.astype('float32')
 x_test = x_test.astype('float32')
@@ -51,7 +54,7 @@ y_test = np_utils.to_categorical(y_test, 10)
 model = Sequential()
 #入力は最初以外予想可能
 # Conv2D([フィルタ数],(畳み込み行列), padding="same"[出力が入力とおなじ大きさになるように、入力をpaddingする])
-model.add(Conv2D(32, (3, 3), padding="same", input_shape=x_train.shape[1:])) #input_shape=(32,32,3)、32個のバイアス項
+model.add(Conv2D(32,(3, 3), padding="same", input_shape=x_train.shape[1:])) #input_shape=(32,32,3)、32個のバイアス項
 model.add(Activation('relu'))
 model.add(Conv2D(32, (3, 3)))
 model.add(Activation('relu'))
@@ -65,7 +68,7 @@ model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
 
-model.add(Flatten())
+model.add(Flatten())#テンソルを一次元に変換する
 model.add(Dense(512))
 model.add(Activation('relu'))
 model.add(Dropout(0.5))
