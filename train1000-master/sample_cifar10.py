@@ -26,6 +26,7 @@ import activation
 
 ##### model #####
 def build_model( nb_classes=10, Wl20=0, dr0=0, nb_features0=1024, act='relu' ):
+	
 	model = Sequential()
 	L = 0
 	
