@@ -3,7 +3,7 @@
 """
 Created on Mon Jun 17 15:30:47 2019
 
-学習
+学習よりも前のBC-learning処理で時間がかかります
 
 @author: shoichi
 """
